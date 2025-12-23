@@ -67,6 +67,8 @@ project:
     UI: User Interface
     API: Application Programming Interface
     IDE: Integrated Development Environment
+    RAG: Retrieval-Augmented Generation
+    MCP: Model Context Protocol
   references:
     cs: https://articles.continuousfoundation.org/articles/defining-continuous-science
 site:
