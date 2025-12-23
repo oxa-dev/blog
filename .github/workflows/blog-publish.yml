@@ -1,0 +1,19 @@
+name: Blog Publish
+on:
+  push:
+    branches: ["main"]
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  publish:
+    uses: curvenote/actions/.github/workflows/submit.yml@v1
+    with:
+      venue: oxa
+      kind: blog
+      collection: blog
+      path: articles/*
+      publish: true
+    secrets:
+      CURVENOTE: ${{ secrets.CURVENOTE_TOKEN }}
+      GITHUB: ${{ secrets.GITHUB_TOKEN }}
