@@ -5,9 +5,10 @@ project:
   banner: banner.png
   thumbnail: thumbnail.png
   venue:
-    title: Continuous Science Foundation
-    url: https://continuousfoundation.org
-  subject: Article
+    title: Open Exchange Architecture
+    url: https://oxa.dev
+  subject: Blog
+  github: https://github.com/oxa-dev/blog
   contributors:
     - id: rowan
       name: Rowan Cockett
@@ -60,6 +61,12 @@ project:
     JSON-LD: JSON Linked Data
     RDF: Resource Description Framework
     CC: Creative Commons
+    AI: Artificial Intelligence
+    LLM: Large Language Model
+    UX: User Experience
+    UI: User Interface
+    API: Application Programming Interface
+    IDE: Integrated Development Environment
   references:
     cs: https://articles.continuousfoundation.org/articles/defining-continuous-science
 site:
