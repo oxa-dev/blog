@@ -69,7 +69,17 @@ project:
     IDE: Integrated Development Environment
     RAG: Retrieval-Augmented Generation
     MCP: Model Context Protocol
+    WYSIWYG: What You See Is What You Get
   references:
     cs: https://articles.continuousfoundation.org/articles/defining-continuous-science
+  exports:
+    - id: pdf
+      format: typst
+      template: https://github.com/curvenote-templates/csf.git
+      article: index.md
+      output: full_text.pdf
+  downloads:
+    - id: pdf
+      title: Download PDF
 site:
   template: article-theme
