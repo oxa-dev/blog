@@ -81,3 +81,7 @@ Outcomes of OXA: discovery, method reuse, versioning, and composable knowledge w
 These are some of the principles and ideas and directions that we're going towards, at the Continuous Science Foundation through the OpenExchange Architecture Project. If you do want to learn more, visit <https://oxa.dev> to join. We also have a [Discord community](https://discord.oxa.dev) where you are having real-time discussions and there's ways to sign up for mailing lists and groups on that as well.
 
 Thank you very much. 🚀
+
+## Acknowledgements
+
+This talk was given at the National Academies of Science Action Collaborative in January 2026 and has had much input and shaping from Nokome Bentley (Stencila), Tracy Teal (openRxiv), and Courtney Babott (Continuous Science Foundation).
