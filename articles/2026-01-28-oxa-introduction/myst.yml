@@ -15,7 +15,7 @@ project:
     the rich evidence underneath it.
   date: 2026-01-28
   downloads:
-    - id: pdf
-      title: Download Slides
+    - title: Download Slides
+      url: slides.pdf
   authors:
     - id: rowan
