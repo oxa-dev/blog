@@ -1,0 +1,21 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+extends:
+  - ../blog.yml
+project:
+  doi: 10.62329/erug9288
+  id: 9798fd21-febc-4e8b-9ce5-5cef3a9cad58
+  title: Introducing the Open Exchange Architecture
+  description: |
+    Scientific communication still privileges narrative over utility, while the data, code,
+    protocols, and computation that underpin modern research are pushed into
+    hard-to-access supplements. Rowan Cockett introduces the
+    Open Exchange Architecture (OXA), an emerging, community-driven standard
+    designed to unbundle research from its paper-shaped container and expose
+    the rich evidence underneath it.
+  date: 2026-01-28
+  downloads:
+    - title: Download Slides
+      url: slides.pdf
+  authors:
+    - id: rowan
