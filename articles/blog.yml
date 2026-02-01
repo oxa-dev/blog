@@ -38,7 +38,7 @@ project:
     - id: csf
       name: Continuous Science Foundation
       ror: https://ror.org/00zwsrq61
-      github: https://github.com/continuous-foundation
+      github: continuous-foundation
       bluesky: continuous.foundation
       linkedin: https://www.linkedin.com/company/continuous-foundation
     - id: curvenote
@@ -49,7 +49,7 @@ project:
       url: https://curvenote.com
       linkedin: https://www.linkedin.com/company/curvenote/
       bluesky: curvenote.com
-      github: https://github.com/curvenote
+      github: curvenote
     - id: openrxiv
       name: openRxiv
       url: https://openrxiv.org
