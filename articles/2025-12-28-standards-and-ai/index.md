@@ -13,13 +13,13 @@ Language models can parse PDFs, extract figures from images, summarize papers, i
 
 **If AI can read _anything_, do we still need standards?**
 
-This framing misses something fundamental. \
-**Standards don’t just shape machines. They shape people.** \
+This framing misses something fundamental.
+**Standards don’t just shape machines. They shape people.**
 They structure how research is expressed, how it is reviewed, how it is rewarded, and ultimately what gets made. When standards encode good practices, they turn values into defaults—so that simply participating in the system means adhering to those practices[^practices].
 
 [^practices]: Good practices in science—such as data sharing, reproducibility, transparency, and reuse—do not spread by agreement alone; they spread when they are built into the structures of how research is done and shared. Standards can encode these practices directly, making them part of the normal workflow rather than optional extras. A well-known example is the FAIR principles, which formalized expectations around data being Findable, Accessible, Interoperable, and Reusable. While FAIR is not a single technical format, it has materially reshaped infrastructure, funding requirements, repository design, and community norms by defining what “good” looks like and allowing tools and policies to align around it. In this way, standards operate as cultural infrastructure: they align incentives, tooling, and behavior by making best practices the path of least resistance.
 
-> The interface we offer to the world determines the science the world produces.
+**The interface we offer to the world determines the science the world produces.**
 
 AI changes _how_ we interact with scientific knowledge, but it does not directly change the social forces that govern it. It does gives us a new chance to reshape those forces—**if we build the right substrate underneath.**
 
@@ -50,6 +50,8 @@ Without standards, AI simply learns to imitate the old incentives more efficient
 Formatless science is not a revolution. It is varnish.
 
 To change the _culture_ of science, we must change the _interfaces_ of science—and interfaces are built on standards[^standards].
+
+[^standards]: Throughout this piece, “standards” need not imply a single, universal specification or a top-down committee process. In practice, standards often begin locally: within a research group, a company, a tool, or even a single application API. What matters is not universality at the outset, but consistency and reuse. As these shared data structures, schemas, and interfaces are adopted more widely—across teams, tools, repositories, or entire segments of open-access science—their value compounds. Capabilities improve, interoperability emerges, tooling stabilizes, and new forms of reuse and attribution become possible, including citation and credit at the level of individual figures, datasets, analyses, or workflows. Standards scale socially as much as technically.
 
 ## Standards Are Levers for Social Change, Not Just Technical Scaffolding
 
@@ -149,19 +151,19 @@ Those interfaces work because they operate on **rich context**:
 - sophisticated version control systems
 - long-lived, machine-readable artifacts
 
-If we had jumped directly from [Windows Notepad](https://en.wikipedia.org/wiki/Windows_Notepad) to chat‑based code generation—skipping IDEs, compilers, and tooling—the result would have been very different. Stunted. AI systems would lack the structural context and automated corrections they rely on. They would be far more error‑prone, and would be incapable of supporting the industries that now depend on them.
-
-Today, scientific AI is being asked to reason over PDFs. That is the equivalent of trying to build modern software tooling on plain-text files alone.
-
 ![](./towards-ides.png)
 
-PDFs are not a stable foundation. They erase structure, hide context, and collapse rich computational work into artifacts shaped by print-era incentives. Worse, they constrain what researchers share in the first place: if the unit of evaluation must fit inside a PDF-shaped box, then the incentives for sharing data, code, workflows, and intermediate results are marginalized[^margins].
+If we had jumped directly from [Windows Notepad](https://en.wikipedia.org/wiki/Windows_Notepad) to chat‑based code generation—skipping IDEs, compilers, and tooling—the result would have been very different. Stunted. AI systems would lack the structural context and automated corrections they rely on. They would be far more error‑prone, and would be incapable of supporting the industries that now depend on them.
+
+Today, scientific AI is being asked to reason over PDFs and create facsimiles of pieces-of-paper. That is the equivalent of trying to build modern software tooling on plain-text files alone. Tools like OpenAI’s Prism make this tension especially clear: they dramatically improve the experience of producing polished, paper-shaped documents, but they do so by **doubling down on the PDF** as the primary artifact—optimizing for narrative output rather than structured, machine-actionable scientific objects.
+
+PDFs are not a stable foundation. PDFs are not an appropriate medium for knowledge. They erase structure, hide context, and collapse rich computational work into artifacts shaped by print-era incentives. Worse, they constrain what researchers share in the first place: if the unit of evaluation must fit inside a PDF-shaped box, then the incentives for sharing data, code, workflows, and intermediate results are marginalized[^margins].
 
 [^margins]: That is, they are _literally_ in the margins and footers of scientific repositories and our leading journals.
 
 ## Adding Context to Research Objects
 
-To build genuinely transformative scientific interfaces, we need standards that treat research outputs more like evolving continuous projects rather than a static document.
+To build genuinely transformative scientific interfaces, we need standards that treat research outputs as modular _components_ rather than a static opaque document.
 
 That means first-class access to:
 
@@ -177,7 +179,7 @@ That means first-class access to:
 
 With this context, entirely new experiences become possible: running new analyses directly on prior work, exploring alternative visualizations, launching agents to test hypotheses, or comparing methods across studies without starting from scratch.
 
-This is what will actually transform science—not hallucinated LaTeX rendered in a chat window[^prism], but the science itself, connected to the data, code, experiments, and decisions that produced it.
+This is what will actually transform science—not hallucinated LaTeX rendered in a chat window[^prism], but the _science itself_, connected to the data, code, experiments, and decisions that produced it.
 
 We need standards that work for humans as well as for an AI-mediated future. The good news is that the _translations_ into a new format is now abundantly possible; _the tools exist today_. Future submission or creation interfaces will focus on improving the capture of metadata _at the time of submission/creation_ with human-in-the-loop review; and AI-enabled systems will make this much less painful than todays scientific submission forms.
 
@@ -211,8 +213,8 @@ But we only get that future if we define:
 - how they appear in chat interfaces
 - how agents operate on them
 
-> These are not _just_ technical questions. \
-> They are **social** ones.
+**These are not _just_ technical questions.** \
+**They are _social_ ones.**
 
 The standards we build now will shape what scientists create for decades to come.
 
@@ -230,6 +232,4 @@ This is the work of the [Open Exchange Architecture](https://oxa.dev):
 to build the shared substrate that supports richer interfaces, better incentives, more transparent research, and a scientific culture aligned with what we value—not just what we inherited.
 
 The future is not formatless. \
-The future is modular, structured, referenceable, computational—and _socially_ transformative.
-
-[^standards]: Throughout this piece, “standards” need not imply a single, universal specification or a top-down committee process. In practice, standards often begin locally: within a research group, a company, a tool, or even a single application API. What matters is not universality at the outset, but consistency and reuse. As these shared data structures, schemas, and interfaces are adopted more widely—across teams, tools, repositories, or entire segments of open-access science—their value compounds. Capabilities improve, interoperability emerges, tooling stabilizes, and new forms of reuse and attribution become possible, including citation and credit at the level of individual figures, datasets, analyses, or workflows. Standards scale socially as much as technically.
+The future is modular, structured, referenceable, computational, composable—and _socially_ transformative.

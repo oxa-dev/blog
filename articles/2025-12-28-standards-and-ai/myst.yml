@@ -11,6 +11,5 @@ project:
   authors:
     - id: rowan
   downloads:
-    - id: podcast
-      title: Listen as a Podcast
-      url: standards-and-ai.mp3
+    - title: Listen as a Podcast
+      file: standards-and-ai.m4a
