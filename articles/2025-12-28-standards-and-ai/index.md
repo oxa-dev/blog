@@ -9,7 +9,7 @@ Language models can parse PDFs, extract figures from images, summarize papers, i
 
 **If AI can read _anything_, do we still need standards?**
 
-This framing misses something fundamental.
+Questions framed this way miss something fundamental.
 **Standards don’t just shape machines. They shape people.**
 They structure how research is expressed, how it is reviewed, how it is rewarded, and ultimately what gets made. When standards encode good practices, they turn values into defaults—so that simply participating in the system means adhering to those practices[^practices].
 
@@ -127,6 +127,8 @@ Agents cannot collaborate reliably without shared standards[^agents].
 And when agents become part of the scientific workflow, **the standards we choose will determine the social shape of science.**
 
 [^agents]: Agent collaboration will rely on a hybrid stack: structured content, well-defined APIs, and AI-mediated access patterns such as RAG pipelines, MCP-style servers, or their successors. While the interfaces may evolve, the underlying requirement remains constant: agents need shared, machine-actionable representations of scientific objects to coordinate, reason, verify results, and build on each other’s work.
+
+_Are we comfortable outsourcing scientific meaning to whichever system inferred it most recently?_
 
 ## Science Needs "IDEs"
 
