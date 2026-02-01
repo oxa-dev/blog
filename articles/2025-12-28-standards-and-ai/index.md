@@ -233,3 +233,7 @@ to build the shared substrate that supports richer interfaces, better incentives
 
 The future is not formatless. \
 The future is modular, structured, referenceable, computational, composable—and _socially_ transformative.
+
+## Acknowledgements
+
+Thank you to Tracy Teal (openRxiv) and Courtney Babott (CSF, Wildly Open) for their feedback, improvements, and for the many conversations that shaped these ideas.
