@@ -2,21 +2,22 @@
 title: Standards Matter More Than Ever in the Age of AI
 subtitle: Rethinking scientific UX, incentives, and agency in an AI-mediated world
 abstract: |
-  Advances in artificial intelligence have led to claims that formal standards in scientific communication are becoming obsolete. If AI systems can parse PDFs, extract figures, infer metadata, and answer questions from unstructured text, why invest in shared formats and schemas at all? This framing misunderstands the role standards play. Standards do not merely serve machines; they shape interfaces, incentives, and social norms, determining what kinds of scientific work are produced, shared, and rewarded.
+  Do advances in artificial intelligence mean that formal standards in scientific communication are becoming obsolete? If AI systems can parse PDFs, extract figures, infer metadata, and answer questions from unstructured text, why invest in shared formats and schemas at all? This framing misunderstands the role standards play. Standards do not merely serve machines; they shape interfaces, incentives, and social norms, determining what kinds of scientific work are produced, shared, and rewarded.
 
   There is a parallel in software development: AI-assisted coding succeeds not because of chat interfaces alone, but because it builds on decades of tooling—IDEs, language servers, testing frameworks, and structured project context. By contrast, today’s scientific AI is forced to operate on PDFs, a print-era artifact that erases structure and constrains what researchers share. Chat interfaces layered on top of PDFs may improve access, but they do not directly change the underlying incentive system nor support or encourage richer, more reliable scientific workflows.
 
   Meaningful transformation requires standards that treat research outputs as modular, contextualized objects—linking data, code, analyses, provenance, and computation as first-class components. Such standards enable new interfaces, support AI agents, and create pathways for social change by reshaping credit, transparency, and reproducibility. In an AI-mediated future, standards are not less relevant; they become the primary substrate through which scientific values are encoded and sustained.
 ---
 
-A quiet claim has been gaining traction: \
-**If AI can read anything, do we still need standards?**
-
 Language models can parse PDFs, extract figures from images, summarize papers, infer missing metadata, and answer questions about almost any format. When a growing share of scientific interaction takes place through chat interfaces, it’s tempting to imagine a future where structure doesn’t matter—where AI simply interprets the mess for us.
 
-But this argument misses something fundamental. \
+**If AI can read _anything_, do we still need standards?**
+
+This framing misses something fundamental. \
 **Standards don’t just shape machines. They shape people.** \
-They structure how research is expressed, how it is reviewed, how it is rewarded, and ultimately what gets made.
+They structure how research is expressed, how it is reviewed, how it is rewarded, and ultimately what gets made. When standards encode good practices, they turn values into defaults—so that simply participating in the system means adhering to those practices[^practices].
+
+[^practices]: Good practices in science—such as data sharing, reproducibility, transparency, and reuse—do not spread by agreement alone; they spread when they are built into the structures of how research is done and shared. Standards can encode these practices directly, making them part of the normal workflow rather than optional extras. A well-known example is the FAIR principles, which formalized expectations around data being Findable, Accessible, Interoperable, and Reusable. While FAIR is not a single technical format, it has materially reshaped infrastructure, funding requirements, repository design, and community norms by defining what “good” looks like and allowing tools and policies to align around it. In this way, standards operate as cultural infrastructure: they align incentives, tooling, and behavior by making best practices the path of least resistance.
 
 > The interface we offer to the world determines the science the world produces.
 
@@ -37,10 +38,14 @@ If our scientific interfaces only allow narrative, we will continue producing na
 If they make data second-class, data will remain second-class.
 If they hide computation, computation will remain invisible.
 
-AI chat interfaces do not solve this problem.
+AI chat interfaces do not solve these problem.
 They sit _on top_ of it.
 
-Without standards, AI simply learns to imitate the old incentives more efficiently. If the ground truth remains a PDF-shaped artifact, AI will produce a PDF-shaped scientific culture—just accessed via a chatbot.
+Without standards, AI simply learns to imitate the old incentives more efficiently. If the ground truth remains a PDF-shaped artifact, AI will produce a PDF-shaped scientific culture—just accessed or created via a chatbot. See, for example, OpenAI's Prism[^prism]. If citations are designed for paper, we will continue to produce things that _look_ like citations but risk fabrication (or worse[^citations]).
+
+[^prism]: Tools such as [OpenAI’s Prism](https://prism.openai.com/), released in January 2026, demonstrate how AI can dramatically lower the friction of producing polished, narrative scientific documents. While this is powerful, it also foregrounds narrative and print-documents as the primary unit of scientific output and de-emphasizes structured data, computation, and verifiable links to underlying research objects. This shift is already increasing strain: AI-assisted submissions and paper-mills exploit narrative-first interfaces to generate content that **looks** scientific while bypassing many of the checks that historically constrained scale. What was once possible but costly is now easy, marketed, supported by dedicated tooling, and subsidized at scale.
+
+[^citations]: Several AI writing tools now include features such as “add the references,” producing reference text or BibTeX citation blocks that compile cleanly into PDFs but may lack DOIs, resolvable identifiers, or any connection to real scholarly records. The result is a document that looks correct but may contain fabricated or unverifiable references—a failure mode already observed in high-profile contexts, including [government reports](https://www.science.org/content/article/trump-officials-downplay-fake-citations-high-profile-report-children-s-health) and [legal filings](https://www.cbsnews.com/news/lawyer-apologizes-ai-fake-quotes-judgments-murder-case-australia/).
 
 Formatless science is not a revolution. It is varnish.
 
@@ -92,9 +97,13 @@ Chat does not:
 - enable multi-agent validation or analysis
 
 Without standards, chat becomes a universal UI sitting on top of a fractured, inconsistent, ambiguous world. Science cannot rest on answers that change from run to run.
-The scientific record must be inspectable, referenceable, and stable—**not probabilistic**.
+The scientific record must be inspectable, referenceable, and stable—**not probabilistic**[^probabilistic].
+
+[^probabilistic]: In AI systems, “probabilistic” refers to outputs that are generated based on likelihood rather than fixed rules. Given the same input, a model may produce different responses across runs, shaped by model parameters, sampling strategies, context windows, and training data. This contrasts with deterministic systems, where the same inputs reliably produce the same outputs: an essential property for reproducibility, verification, citation, and long-term integrity of the scientific record.
 
 With standards, chat becomes a **gateway** into a rich ecosystem of modular, interoperable, trustworthy, reusable scientific components.
+
+![](./gateway.png)
 
 ## AI Agents Make Standards Socially Essential
 
@@ -144,6 +153,8 @@ If we had jumped directly from [Windows Notepad](https://en.wikipedia.org/wiki/W
 
 Today, scientific AI is being asked to reason over PDFs. That is the equivalent of trying to build modern software tooling on plain-text files alone.
 
+![](./towards-ides.png)
+
 PDFs are not a stable foundation. They erase structure, hide context, and collapse rich computational work into artifacts shaped by print-era incentives. Worse, they constrain what researchers share in the first place: if the unit of evaluation must fit inside a PDF-shaped box, then the incentives for sharing data, code, workflows, and intermediate results are marginalized[^margins].
 
 [^margins]: That is, they are _literally_ in the margins and footers of scientific repositories and our leading journals.
@@ -162,11 +173,27 @@ That means first-class access to:
 - provenance and lineage
 - modular components that can be reused and recombined
 
+![](./constellation.png)
+
 With this context, entirely new experiences become possible: running new analyses directly on prior work, exploring alternative visualizations, launching agents to test hypotheses, or comparing methods across studies without starting from scratch.
 
-This is what will actually transform science—not hallucinated LaTeX rendered in a chat window, but the science itself, connected to the data, code, experiments, and decisions that produced it.
+This is what will actually transform science—not hallucinated LaTeX rendered in a chat window[^prism], but the science itself, connected to the data, code, experiments, and decisions that produced it.
 
-We need standards that work for humans as well as for an AI-mediated future. The good news is that the _translations_ into a new format is now abundantly possible; _the tools exist today_. No matter the system, articles will not be translated on the fly, but put into _some_ sort of structure that exist beneath the surface. The real question is whether those standards are good —whether they enable new capabilities, reinforce the incentives we want, and reflect the values we hold as a scientific community.
+We need standards that work for humans as well as for an AI-mediated future. The good news is that the _translations_ into a new format is now abundantly possible; _the tools exist today_. Future submission or creation interfaces will focus on improving the capture of metadata _at the time of submission/creation_ with human-in-the-loop review; and AI-enabled systems will make this much less painful than todays scientific submission forms.
+
+## Inevitability
+
+No matter the interface, articles will not be parsed or interpreted purely on demand[^structure]. At the scale of hundreds of thousands—or millions—of articles, content must be processed in batches, normalized, and stored in intermediate representations that exist beneath the surface. Search, discovery, recommendation, analytics, monitoring, compliance, and AI-assisted tooling all depend on this step. Real systems cannot afford to re-infer structure from PDFs every time a question is asked.
+
+[^structure]: When tools like ChatGPT or NotebookLM appear to be “reading” a document, they are not interpreting it live each time a question is asked. The document is first ingested: text is extracted, segmented, embedded, and often transformed into intermediate representations such as chunks, vectors, summaries, or structured metadata. These representations are then stored and reused for subsequent queries. This preprocessing step is essential for performance, cost, and scale, and it effectively creates a persistent structure beneath the conversational interface—even when that structure is invisible to the user.
+
+That underlying structure is already being built. Large publishers, repositories, and platforms are actively extracting and maintaining internal representations of articles, figures, citations, entities, and relationships. The ability to understand structure and connections at scale is what enables new products, new services, and—inevitably—new paywalls. This is a major source of excitement across the publishing industry: structure unlocks leverage.
+
+The question, then, is not whether these _data-structures_ will exist. They will.
+
+The real question is whether those data-structures are good—whether they are open standards or proprietary moats, interoperable or siloed; whether they enable new capabilities broadly or concentrate them narrowly; whether they reinforce the incentives we want as a community or quietly entrench the ones we are trying to move beyond; and whether they reflect the values we hold for science as a public, cumulative, and verifiable endeavor.
+
+Data-structures are inevitable infrastructure. What remains undecided is who they serve—if they will be defined by open-standards—and what kind of scientific future they make possible.
 
 ## Our Choice
 
@@ -184,7 +211,7 @@ But we only get that future if we define:
 - how they appear in chat interfaces
 - how agents operate on them
 
-> These are not just technical questions. \
+> These are not _just_ technical questions. \
 > They are **social** ones.
 
 The standards we build now will shape what scientists create for decades to come.
@@ -203,6 +230,6 @@ This is the work of the [Open Exchange Architecture](https://oxa.dev):
 to build the shared substrate that supports richer interfaces, better incentives, more transparent research, and a scientific culture aligned with what we value—not just what we inherited.
 
 The future is not formatless. \
-The future is modular, structured, referenceable, computational—and socially transformative.
+The future is modular, structured, referenceable, computational—and _socially_ transformative.
 
 [^standards]: Throughout this piece, “standards” need not imply a single, universal specification or a top-down committee process. In practice, standards often begin locally: within a research group, a company, a tool, or even a single application API. What matters is not universality at the outset, but consistency and reuse. As these shared data structures, schemas, and interfaces are adopted more widely—across teams, tools, repositories, or entire segments of open-access science—their value compounds. Capabilities improve, interoperability emerges, tooling stabilizes, and new forms of reuse and attribution become possible, including citation and credit at the level of individual figures, datasets, analyses, or workflows. Standards scale socially as much as technically.
