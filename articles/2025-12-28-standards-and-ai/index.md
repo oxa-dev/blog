@@ -1,6 +1,6 @@
 ---
 title: Standards Matter More Than Ever in the Age of AI
-subtitle: Rethinking scientific UX, incentives, and agency in an AI-mediated world
+subtitle: Rethinking scientific experiences, incentives, and agency in an AI-mediated world
 abstract: |
   Advances in artificial intelligence have prompted claims that standards in scientific communication are becoming obsolete. If AI systems can parse PDFs, infer metadata, and generate convincing narratives from unstructured text, why invest in shared formats at all? This framings misunderstands the role of standards. Standards do not merely serve machines; they shape interfaces, incentives, and scientific culture, determining what kinds of work are produced, shared, and rewarded. Narrative-first AI tools layered on PDFs may improve access, but they reinforce print-era abstractions and probabilistic outputs ill-suited to reproducibility, verification, credit, and trust. Drawing a parallel to software development, the article shows that AI succeeds when built on rich, structured context—not plain text. At scale, structure is inevitable. The real question is whether those structures are open, interoperable, and aligned with scientific values, or proprietary systems that entrench existing incentives.
 ---
@@ -22,13 +22,13 @@ AI changes _how_ we interact with scientific knowledge, but it does not directly
 ## The Interfaces We Create Determine the Incentives We Reinforce
 
 Researchers don’t publish static PDFs because they love them.
-They publish PDFs because they are the _interface_ the system expects—and because the incentives, credit structures, and evaluation mechanisms are designed around them.
+They publish PDFs because they are the _interface_ the system expects—and because the incentives, credit structures, tools, and evaluation mechanisms are designed around them.
 
 A paper doesn’t include code because the interface of “the paper” was never designed to hold it.
 A multi-panel figure is designed for print because print is intertwined with the incentive models.
 Supplementary materials exist on the margins because the format put them there.
 
-> UX creates norms. Norms create incentives. Incentives create behavior.
+**UX creates norms. Norms create incentives. Incentives create behavior.**
 
 If our scientific interfaces only allow narrative, we will continue producing narrative-first science.
 If they make data second-class, data will remain second-class.
@@ -43,7 +43,7 @@ Without standards, AI simply learns to imitate the old incentives more efficient
 
 [^citations]: Several AI writing tools now include features such as “add the references,” producing reference text or BibTeX citation blocks that compile cleanly into PDFs but may lack DOIs, resolvable identifiers, or any connection to real scholarly records. The result is a document that looks correct but may contain fabricated or unverifiable references—a failure mode already observed in high-profile contexts, including [government reports](https://www.science.org/content/article/trump-officials-downplay-fake-citations-high-profile-report-children-s-health) and [legal filings](https://www.cbsnews.com/news/lawyer-apologizes-ai-fake-quotes-judgments-murder-case-australia/).
 
-Formatless science is not a revolution. It is varnish.
+**Formatless science is not a revolution. It is varnish.**
 
 To change the _culture_ of science, we must change the _interfaces_ of science—and interfaces are built on standards[^standards].
 
@@ -134,7 +134,7 @@ A useful comparison comes from evolving tooling and products in software develop
 
 Modern programming happens in sophisticated environments like [VS Code](https://en.wikipedia.org/wiki/Visual_Studio_Code) and [Cursor](<https://en.wikipedia.org/wiki/Cursor_(code_editor)>) that now integrate AI directly into the interface, alongside language server protocols, linting, static analysis, automated testing, dependency graphs, and version control. Even when these interfaces are completely abstracted away (e.g. [Lovable](<https://en.wikipedia.org/wiki/Lovable_(company)>), [V0](https://en.wikipedia.org/wiki/Vercel)), the foundational technologies still power the experience. These programming tools predate modern LLMs, yet they are precisely what made AI-assisted coding powerful rather than fragile demo-ware.
 
-> AI did not replace these environments. It amplified them. It abstracted them.
+**AI did not replace these environments. It amplified them. It abstracted them.**
 
 Those interfaces work because they operate on **rich context**:
 
@@ -191,7 +191,7 @@ The question, then, is not whether these _data-structures_ will exist. They will
 
 The real question is whether those data-structures are good—whether they are open standards or proprietary moats, interoperable or siloed; whether they enable new capabilities broadly or concentrate them narrowly; whether they reinforce the incentives we want as a community or quietly entrench the ones we are trying to move beyond; and whether they reflect the values we hold for science as a public, cumulative, and verifiable endeavor.
 
-Data-structures are inevitable infrastructure. What remains undecided is who they serve—if they will be defined by open-standards—and what kind of scientific future they make possible.
+Data-structures are inevitable infrastructure. What remains undecided is who they serve, if they will be defined by open-standards, and what kind of scientific future they make possible.
 
 ## Our Choice
 
@@ -222,7 +222,7 @@ If we want to move beyond static papers, beyond non-executable figures, beyond b
 
 AI lets us hide complexity from authors and readers. \
 Standards let us transform the ecosystem around them. \
-_Together_, they allow us to redesign the incentives, workflows, and UX of scientific communication.
+_Together_, they allow us to redesign the incentives, workflows, and experience of scientific communication and discovery.
 
 This is the work of the [Open Exchange Architecture](https://oxa.dev):
 to build the shared substrate that supports richer interfaces, better incentives, more transparent research, and a scientific culture aligned with what we value—not just what we inherited.
