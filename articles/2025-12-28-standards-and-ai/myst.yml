@@ -1,0 +1,15 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+extends:
+  - ../blog.yml
+project:
+  id: 45b71826-f7b2-458d-abde-9edaab99274a
+  title: Standards Matter More Than Ever in the Age of AI
+  subtitle: Rethinking scientific UX, incentives, and agency in an AI-mediated world
+  description: AI can read anything, but without shared standards it only reinforces PDF-era incentives. The interfaces we build shape what science becomes, and transforming scientific culture requires modular, structured, contextual foundations beneath every interface.
+  date: 2025-12-28
+  authors:
+    - id: rowan
+  downloads:
+    - title: Listen as a Podcast
+      file: standards-and-ai.m4a
