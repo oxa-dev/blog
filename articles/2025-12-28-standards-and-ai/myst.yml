@@ -3,6 +3,7 @@ version: 1
 extends:
   - ../blog.yml
 project:
+  doi: 10.62329/mmyc8968
   id: 45b71826-f7b2-458d-abde-9edaab99274a
   title: Standards Matter More Than Ever in the Age of AI
   subtitle: Rethinking scientific UX, incentives, and agency in an AI-mediated world
