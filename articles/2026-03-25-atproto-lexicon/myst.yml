@@ -3,6 +3,7 @@ version: 1
 extends:
   - ../blog.yml
 project:
+  id: 8c02483f-b851-4677-8a2d-07b55dac86af
   title: Scientific Documents as First-Class Objects on AT Protocol
   description: |
     OXA now defines an AT Protocol lexicon for publishing scientific documents
