@@ -126,6 +126,15 @@ const record = oxaToAtproto(document, {
 });
 ```
 
+[Stencila](https://stencila.io) — a rich translation layer between document formats including DOCX, JATS, Markdown flavours, and more — now also supports both OXA JSON and AT Protocol JSON as output targets. If you already have content in another format, you can go straight to the AT Protocol representation:
+
+```bash
+stencila convert article.md article.oxa.json --to oxa
+stencila convert article.md article.atproto.json
+```
+
+This means you can take a Markdown draft, a JATS XML export from a journal, or a Word document and produce a structured AT Protocol record without touching the OXA CLI at all. Stencila handles the full pipeline.
+
 See the [full documentation](https://oxa.dev/articles/documentation/atproto-lexicon) for details.
 
 ## Distributed annotations: facets as standalone contributions
