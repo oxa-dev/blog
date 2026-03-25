@@ -34,6 +34,15 @@ project:
       github: nokome
       affiliations:
         - id: stencila
+    - id: steve
+      name: Steve Purves
+      orcid: 0000-0002-0760-5497
+      email: steve@curvenote.com
+      affiliations:
+        - curvenote
+      twitter: stevejpurves
+      github: stevejpurves
+      bluesky: opensci.dev
   affiliations:
     - id: csf
       name: Continuous Science Foundation
