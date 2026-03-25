@@ -130,7 +130,7 @@ See the [full documentation](https://oxa.dev/articles/documentation/atproto-lexi
 
 ## Distributed annotations: facets as standalone contributions
 
-The facet model opens up a possibility that we think is genuinely exciting — and one that goes well beyond formatting.
+The facet model opens up a possibility that we think is genuinely exciting for **distributed annotations** on top of the scientific literature.
 
 Because facets are byte-range annotations layered _on top of_ plain text, there is nothing stopping someone other than the original author from publishing new facets that target an existing document. A third party — a reviewer, an institution, an AI agent — could publish a record that attaches additional facet annotations to a paragraph in someone else's document. These annotations live in the contributor's own PDS, signed with their own identity, and can be aggregated by any indexer that knows how to look for them.
 
