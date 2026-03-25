@@ -1,0 +1,17 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+extends:
+  - ../blog.yml
+project:
+  title: Scientific Documents as First-Class Objects on AT Protocol
+  description: |
+    OXA now defines an AT Protocol lexicon for publishing scientific documents
+    to the Atmosphere. The `pub.oxa.*` namespace lets documents live in any
+    Personal Data Server, making scientific content user-owned, portable, and
+    discoverable alongside social interactions, feeds, and moderation
+    infrastructure.
+  date: 2026-03-25
+  authors:
+    - id: nokome
+    - id: rowan
+    - id: steve
