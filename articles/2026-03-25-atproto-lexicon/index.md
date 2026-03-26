@@ -2,7 +2,7 @@
 title: Scientific Documents as First-Class Objects on AT Protocol
 subtitle: Publishing research to the Atmosphere with the OXA lexicon
 abstract: |
-  Scientific publishing today relies on centralized platforms that control access, discovery, and permanence. AT Protocol — the decentralized network behind Bluesky — offers a different model: one where data lives in user-owned repositories, discovery is open to any indexer, and identity is portable. We've taken the first step toward bringing scientific documents onto this network: OXA now defines an AT Protocol lexicon under the `pub.oxa.*` namespace. This post introduces the lexicon, explains the design decisions behind it, and describes where we're headed next.
+  Scientific publishing today relies on centralized platforms that control access, discovery, and permanence. AT Protocol — the decentralized network behind Bluesky — offers a different model: one where data lives in user-controlled spaces, discovery is open to any indexer, and identity is portable. We've taken the first step toward bringing scientific documents onto this network: OXA now defines an AT Protocol lexicon under the `pub.oxa.*` namespace. This post introduces the lexicon, explains the design decisions behind it, and describes where we're headed next.
 ---
 
 Scientific publishing runs on centralized platforms. You upload a paper, and the platform controls who can find it, how long it stays available, and what you can do with it. Your identity, your content, and your audience all belong to someone else's server.
@@ -30,8 +30,8 @@ The OXA lexicon is organized into three files under the `pub.oxa` namespace:
 
 | NSID                        | Purpose                                                                            |
 | --------------------------- | ---------------------------------------------------------------------------------- |
-| `pub.oxa.document.document` | The `Document` record type — the root object stored in a PDS                       |
-| `pub.oxa.document.defs`     | Block-level definitions (`paragraph`, `heading`, `richText`) and the `block` union |
+| `pub.oxa.document` | The `Document` record type — the root object stored in a PDS                       |
+| `pub.oxa.blocks.defs`     | Block-level definitions (`paragraph`, `heading`, `richText`) and the `block` union |
 | `pub.oxa.richtext.facet`    | Facet annotations for inline formatting (`emphasis`, `strong`, `byteSlice`)        |
 
 A `Document` record contains an array of blocks. Each block carries a `text` string and an optional `facets` array that annotates ranges of that text with formatting. This flat structure follows the same pattern AT Protocol uses everywhere. It is one of the most interesting parts of the design.
@@ -63,7 +63,7 @@ AT Protocol uses [facets instead of a tree](https://www.pfrazee.com/blog/why-fac
 
 ```json
 {
-  "$type": "pub.oxa.document.defs#paragraph",
+  "$type": "pub.oxa.blocks.defs#paragraph",
   "text": "This is bold and italic text.",
   "facets": [
     {
