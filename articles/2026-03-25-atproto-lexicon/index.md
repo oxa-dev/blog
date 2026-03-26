@@ -7,7 +7,7 @@ abstract: |
 
 Scientific publishing runs on centralized platforms. You upload a paper, and the platform controls who can find it, how long it stays available, and what you can do with it. Your identity, your content, and your audience all belong to someone else's server.
 
-[AT Protocol](https://atproto.com) — the decentralized network that powers [Bluesky](https://bsky.app) — was built around a different set of assumptions. Data lives in signed, user-owned repositories. Any service can index the network. Identity travels with you. These properties were designed for social interaction, but they map remarkably well onto the problems scientific publishing has been struggling with for decades.
+[AT Protocol](https://atproto.com) — the decentralized network that powers [Bluesky](https://bsky.app) — was built around a different set of assumptions. Data lives in signed, user-controlled spaces. Any service can index the network. Identity travels with you. These properties were designed for social interaction, but they map remarkably well onto the problems scientific publishing has been struggling with for decades.
 
 **What if a scientific document were just another record on the Atmosphere?**
 
@@ -28,11 +28,11 @@ The properties that make AT Protocol compelling for social networking are the sa
 
 The OXA lexicon is organized into three files under the `pub.oxa` namespace:
 
-| NSID                        | Purpose                                                                            |
-| --------------------------- | ---------------------------------------------------------------------------------- |
-| `pub.oxa.document` | The `Document` record type — the root object stored in a PDS                       |
-| `pub.oxa.blocks.defs`     | Block-level definitions (`paragraph`, `heading`, `richText`) and the `block` union |
-| `pub.oxa.richtext.facet`    | Facet annotations for inline formatting (`emphasis`, `strong`, `byteSlice`)        |
+| NSID                     | Purpose                                                                            |
+| ------------------------ | ---------------------------------------------------------------------------------- |
+| `pub.oxa.document`       | The `Document` record type — the root object stored in a PDS                       |
+| `pub.oxa.blocks.defs`    | Block-level definitions (`paragraph`, `heading`, `richText`) and the `block` union |
+| `pub.oxa.richtext.facet` | Facet annotations for inline formatting (`emphasis`, `strong`, `byteSlice`)        |
 
 A `Document` record contains an array of blocks. Each block carries a `text` string and an optional `facets` array that annotates ranges of that text with formatting. This flat structure follows the same pattern AT Protocol uses everywhere. It is one of the most interesting parts of the design.
 
